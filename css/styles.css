@@ -14,6 +14,13 @@
     text-align: center;
 }
 
+.H-logo{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
 .nav ul {
     list-style-type: none;
     padding: 0;
