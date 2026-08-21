@@ -761,6 +761,10 @@ body.is-playing .vinyl {
   align-items: start;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 .profile-portrait{
     position: relative;
     width: 500px;
@@ -787,6 +791,37 @@ body.is-playing .vinyl {
     border:1px solid rgba(200,168,107,.7);
     border-radius:16px;
     pointer-events:none;
+<<<<<<< HEAD
+=======
+=======
+.profile-portrait {
+  position: sticky;
+  top: 115px;
+  display: grid;
+  min-height: 520px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(145deg, transparent 35%, rgba(141, 27, 59, 0.38)),
+    linear-gradient(25deg, rgba(216, 183, 104, 0.07), transparent);
+}
+
+.profile-portrait::before {
+  width: 72%;
+  aspect-ratio: 1;
+  content: "H";
+  color: var(--gold-light);
+  border: 1px solid rgba(216, 183, 104, 0.32);
+  border-radius: 50%;
+  font-family: var(--display);
+  font-size: clamp(100px, 14vw, 190px);
+  font-style: italic;
+  line-height: 1.75;
+  text-align: center;
+  box-shadow: 0 0 0 24px rgba(216, 183, 104, 0.025), 0 0 0 48px rgba(216, 183, 104, 0.018);
+>>>>>>> e5dada576489e52202fa37e05b101ba4de843a2c
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 }
 
 .profile-portrait small {
@@ -902,6 +937,10 @@ body.is-playing .vinyl {
 }
 
 .album-art {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
     position: relative;
     width: 440px;
     height: 370px;
@@ -925,6 +964,39 @@ body.is-playing .vinyl {
     padding: 5px 10px;
     border-radius: 6px;
     font-size: 12px;
+<<<<<<< HEAD
+=======
+=======
+  position: relative;
+  display: grid;
+  min-height: 370px;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, transparent 0 28%, rgba(0, 0, 0, 0.35) 28.5% 29%, transparent 29.5%),
+    repeating-radial-gradient(circle at center, #251116 0 5px, #14090c 6px 9px);
+}
+
+.album-art::after {
+  position: absolute;
+  width: 44%;
+  aspect-ratio: 1;
+  content: "";
+  border: 1px solid rgba(240, 217, 149, 0.42);
+  border-radius: 50%;
+  background: var(--album-color, var(--wine-700));
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.album-initial {
+  position: relative;
+  z-index: 2;
+  color: var(--gold-light);
+  font-family: var(--display);
+  font-size: clamp(52px, 7vw, 90px);
+  font-style: italic;
+>>>>>>> e5dada576489e52202fa37e05b101ba4de843a2c
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 }
 
 .album-art .album-index {
@@ -1082,7 +1154,15 @@ body.is-playing .vinyl {
   font-size: clamp(27px, 3vw, 38px);
   font-weight: 500;
   line-height: 1.45;
+<<<<<<< HEAD
   writing-mode: vertical-tb;
+=======
+<<<<<<< HEAD
+  writing-mode: vertical-tb;
+=======
+  writing-mode: vertical-rl;
+>>>>>>> e5dada576489e52202fa37e05b101ba4de843a2c
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 }
 
 .book-card p {
@@ -1093,6 +1173,10 @@ body.is-playing .vinyl {
   line-height: 1.9;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 .book-cover{
     width:100%;
     height:100%;
@@ -1100,6 +1184,25 @@ body.is-playing .vinyl {
     border-radius:10px;
     box-shadow:0 10px 25px rgba(0,0,0,.35);
     transition:.3s;
+<<<<<<< HEAD
+=======
+=======
+.book-stamp {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: var(--gold-light);
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  font-family: var(--display);
+  font-size: 11px;
+  font-style: italic;
+>>>>>>> e5dada576489e52202fa37e05b101ba4de843a2c
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 }
 
 .reading-note {
@@ -1141,6 +1244,55 @@ body.is-playing .vinyl {
     #170b0e;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.sport-card::after {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  width: min(65%, 310px);
+  aspect-ratio: 1;
+  content: "";
+  border: 1px solid rgba(240, 217, 149, 0.22);
+  border-radius: 50%;
+  box-shadow: 0 0 0 18px rgba(216, 183, 104, 0.03), 0 0 0 36px rgba(216, 183, 104, 0.018);
+  transform: translateX(-50%);
+}
+
+.sport-card.tennis::before {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 210px;
+  content: "";
+  border: 8px double var(--gold-light);
+  border-radius: 50%;
+  opacity: 0.75;
+  transform: translateX(-50%) rotate(35deg);
+  box-shadow: 35px 153px 0 -27px var(--gold-light);
+}
+
+.sport-card.running::before {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  z-index: 1;
+  width: 210px;
+  height: 210px;
+  content: "";
+  border: solid var(--gold-light);
+  border-width: 0 0 7px 7px;
+  border-radius: 50%;
+  opacity: 0.72;
+  transform: translateX(-50%) rotate(-38deg) skew(-12deg);
+}
+
+>>>>>>> e5dada576489e52202fa37e05b101ba4de843a2c
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 .sport-index {
   color: var(--gold);
   font-family: var(--display);
@@ -1186,6 +1338,10 @@ body.is-playing .vinyl {
   letter-spacing: 0.16em;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 .sport-image{
     width:300px;
     aspect-ratio:1/1;
@@ -1197,6 +1353,11 @@ body.is-playing .vinyl {
     transition:.3s;
 }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e5dada576489e52202fa37e05b101ba4de843a2c
+>>>>>>> a999f47bccfdb6e4a6ffd0bf75371db76dcac531
 .routine {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
