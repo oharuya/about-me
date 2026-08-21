@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="奥元遥矢への問い合わせ入力ページ。送信機能はなく、テキスト入力のみ利用できます。">
+        <meta name="theme-color" content="#26060f">
+        <title>問い合わせ | 奥元遥矢</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body data-track="5">
+        <a class="skip-link" href="#main">本文へ移動</a>
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="index.html" aria-label="奥元遥矢 トップページ">
+                    <span class="brand-crest" aria-hidden="true">
+                        <span class="laurel left">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                        <span class="monogram">H</span>
+                        <span class="laurel right">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </span>
+                    <span class="brand-copy">
+                        <strong>HARUYA OKUMOTO</strong>
+                        <small>PERSONAL ARCHIVE</small>
+                    </span>
+                </a>
+                <nav class="desktop-nav" aria-label="メインナビゲーション">
+                    <a href="index.html">TOP</a>
+                    <a href="profile.html">経歴紹介</a>
+                    <a href="bands.html">好きなバンド</a>
+                    <a href="novels.html">好きな小説</a>
+                    <a href="sports.html">好きなスポーツ</a>
+                    <a class="active" href="contact.html">問い合わせ</a>
+                </nav>
+                <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" data-menu-toggle>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <nav class="mobile-nav" aria-label="モバイルナビゲーション">
+            <a href="index.html">00 — TOP</a>
+            <a href="profile.html">01 — 経歴紹介</a>
+            <a href="bands.html">02 — 好きなバンド</a>
+            <a href="novels.html">03 — 好きな小説</a>
+            <a href="sports.html">04 — 好きなスポーツ</a>
+            <a href="contact.html">05 — 問い合わせ</a>
+        </nav>
+        <main id="main">
+            <section class="page-hero" data-side="05">
+                <div class="container page-hero-copy">
+                    <p class="eyebrow">Side 05 / Contact</p>
+                    <h1 class="page-title">問い合わせ</h1>
+                    <p class="page-description">最後のトラックは、あなたからのメッセージ。こちらのフォームは自由にテキストを入力できます。</p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container contact-layout">
+                    <div class="contact-side reveal">
+                        <p class="eyebrow">Leave a message</p>
+                        <h2>
+                            言葉を、<br>ここに残す。
+                        </h2>
+                        <p>名前や連絡先、伝えたい内容を入力できます。入力内容はこの端末のタブ内に一時保存されます。</p>
+                        <div class="no-send-note">このページに送信機能はありません。入力した内容が外部へ送られることはありません。</div>
+                    </div>
+                    <form class="contact-form reveal" data-contact-form>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="name">NAME / お名前</label>
+                                <input id="name" name="name" type="text" placeholder="奥元 遥矢" autocomplete="name" data-draft-field>
+                            </div>
+                            <div class="field">
+                                <label for="email">EMAIL / メールアドレス</label>
+                                <input id="email" name="email" type="email" placeholder="example@email.com" autocomplete="email" data-draft-field>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="subject">SUBJECT / 件名</label>
+                            <input id="subject" name="subject" type="text" placeholder="メッセージの件名を入力してください" data-draft-field>
+                        </div>
+                        <div class="field">
+                            <label for="message">MESSAGE / メッセージ</label>
+                            <textarea id="message" name="message" placeholder="ここにメッセージを入力してください" data-draft-field></textarea>
+                        </div>
+                        <button class="button secondary" type="submit">
+                            入力内容を確認 <span class="arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p class="footer-title">Thanks for listening.</p>
+                <p class="footer-meta">
+                    © 2026 HARUYA OKUMOTO<br>SIDE 05 / CONTACT
+                </p>
+            </div>
+        </footer>
+        <div class="music-player" role="region" aria-label="ビジュアル音楽プレイヤー">
+            <div class="player-inner">
+                <div class="now-playing">
+                    <span class="mini-record" aria-hidden="true"></span>
+                    <span class="now-copy">
+                        <small>VISUAL PLAYER / SOUND OFF</small>
+                        <strong data-track-title>CONTACT — LEAVE A MESSAGE</strong>
+                    </span>
+                </div>
+                <div class="player-controls">
+                    <button class="player-button" type="button" aria-label="前のトラック" data-player-prev>‹</button>
+                    <button class="player-button play-toggle" type="button" aria-label="再生" data-player-toggle>
+                        <span data-play-icon>▶</span>
+                    </button>
+                    <button class="player-button" type="button" aria-label="次のトラック" data-player-next>›</button>
+                </div>
+                <div class="player-progress">
+                    <span data-current-time>0:00</span>
+                    <div class="progress-track" role="slider" aria-label="再生位置" aria-valuemin="0" aria-valuemax="100" tabindex="0" data-progress-track>
+                        <span class="progress-fill" data-progress-fill></span>
+                    </div>
+                    <span data-total-time>2:56</span>
+                </div>
+            </div>
+        </div>
+        <div class="toast" role="status" aria-live="polite" data-toast></div>
+    </body>
+</html>
