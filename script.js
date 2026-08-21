@@ -123,8 +123,14 @@
   });
 
   document.querySelectorAll("[data-placeholder-link]").forEach((link) => {
+<<<<<<< HEAD
     link.addEventListener("click", () => {
       showToast("Youtubeを開いています");
+=======
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      showToast("ここに公式の音楽再生リンクを設定できます。現在はプレースホルダーです。");
+>>>>>>> e5dada576489e52202fa37e05b101ba4de843a2c
     });
   });
 
@@ -137,7 +143,11 @@
       renderPlayer();
       savePlayer();
       startTimer();
+<<<<<<< HEAD
       showToast(`${selected} のビジュアル再生を開始しました。ミュージックリンクは「Youtubeで再生」から。`);
+=======
+      showToast(`${selected} のビジュアル再生を開始しました。音源リンクは後から設定できます。`);
+>>>>>>> e5dada576489e52202fa37e05b101ba4de843a2c
     });
   });
 
